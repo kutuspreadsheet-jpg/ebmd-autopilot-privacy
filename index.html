@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Privasi — e-BMD Auto-Pilot Pro</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #F4F0EA;
+      color: #111;
+      margin: 0;
+      padding: 32px 16px;
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #FFF;
+      border: 3px solid #000;
+      box-shadow: 6px 6px 0 #000;
+      border-radius: 14px;
+      padding: 28px;
+    }
+    .badge {
+      display: inline-block;
+      background: #FFE600;
+      border: 2px solid #000;
+      padding: 4px 10px;
+      font-weight: 800;
+      font-size: 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 { margin-top: 0; font-size: 24px; }
+    h2 { font-size: 17px; margin-top: 24px; border-bottom: 2px solid #000; padding-bottom: 4px; }
+    ul { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">e-BMD AUTO-PILOT PRO • MANIFEST V3</span>
+    <h1>Kebijakan Privasi (Privacy Policy)</h1>
+    <p><strong>Terakhir diperbarui:</strong> 24 November 2026</p>
+
+    <p>
+      Ekstensi Chrome <strong>e-BMD Auto-Pilot Pro</strong> dikembangkan sebagai alat produktivitas
+      untuk membantu instansi Pemerintah Daerah dalam mengotomatisasi pengunduhan laporan aset
+      dan penyusunan Master Excel pada portal SIPD e-BMD.
+    </p>
+
+    <h2>1. Pemrosesan Data 100% Lokal (Client-Side)</h2>
+    <p>
+      Seluruh proses pengunduhan laporan KIB, pembacaan struktur Excel (melalui pustaka lokal SheetJS
+      yang dibundel di dalam ekstensi), serta penyimpanan file ke folder komputer pengguna
+      berjalan <strong>100% secara lokal di dalam sesi browser pengguna</strong>.
+    </p>
+
+    <h2>2. Data yang Tidak Kami Kumpulkan</h2>
+    <ul>
+      <li>Kami <strong>tidak</strong> mengumpulkan, mengirimkan, atau menyimpan data aset BMD/SKPD ke server eksternal mana pun.</li>
+      <li>Kami <strong>tidak</strong> mengumpulkan username, kata sandi, cookie sesi, maupun kredensial login portal e-BMD Anda.</li>
+      <li>Kami <strong>tidak</strong> melacak riwayat penelusuran internet (browsing history) atau data pribadi (PII) pengguna.</li>
+      <li>Kami <strong>tidak</strong> menjual atau membagikan data pengguna kepada pihak ketiga maupun jaringan periklanan.</li>
+    </ul>
+
+    <h2>3. Penyimpanan Lokal Browser</h2>
+    <p>
+      Ekstensi hanya menggunakan API <code>chrome.storage.local</code> di perangkat pengguna untuk menyimpan:
+    </p>
+    <ul>
+      <li>Kode lisensi aktivasi daerah (jika diaktifkan oleh pengguna).</li>
+      <li>Alamat URL halaman parameter laporan e-BMD terakhir untuk kemudahan navigasi tombol cepat.</li>
+    </ul>
+
+    <h2>4. Izin Ekstensi (Permissions)</h2>
+    <ul>
+      <li><code>storage</code>: Menyimpan kode lisensi dan preferensi lokal di browser pengguna.</li>
+      <li><code>activeTab</code>: Membaca hostname tab aktif hanya ketika pengguna mengklik ikon ekstensi untuk memverifikasi kecocokan domain lisensi.</li>
+      <li>Akses halaman laporan (<code>*://*/*dbpb_param.aspx*</code> &amp; <code>*://*.mubakab.go.id/*</code>): Menyuntikkan tombol kontroler ekspor pada halaman parameter laporan e-BMD.</li>
+    </ul>
+
+    <h2>5. Kontak Dukungan</h2>
+    <p>
+      Jika Anda memiliki pertanyaan terkait kebijakan privasi ini, silakan hubungi tim pengembang
+      melalui WhatsApp resmi <strong>0882-7119-5803</strong> atau melalui kontak dukungan yang tertera
+      pada halaman listing Chrome Web Store.
+    </p>
+  </div>
+</body>
+</html>
